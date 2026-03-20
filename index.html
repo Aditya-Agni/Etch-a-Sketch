@@ -1,0 +1,48 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Etch a Sketch</title>
+    <link rel="stylesheet" href="style.css">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;600;700&display=swap" rel="stylesheet">
+    <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;600;700&family=Bitcount+Single&display=swap"
+        rel="stylesheet">
+    <link rel="icon" href="data:image/svg+xml,<svg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 100 100'><text y='.9em' font-size='90'>✏️</text></svg>">
+</head>
+
+<body>
+    <h1>Etch-a-Sketch</h1>
+    <div class="layout">
+        <input type="checkbox" id="dropdown">
+        <label for="dropdown" class="close-btn">✖️</label>
+        <label for="dropdown" class="opn-btn">Tools</label>
+
+        <div class="tools">
+            <h2>
+                <center>Tools</center>
+            </h2>
+
+            <input class="color-picker" type="color" value="#000000" hidden>
+            <button class="color-btn">✏️Color Picker</button>
+            <button class="erase">🧼 Eraser</button>
+            <button class="clear">🗑️Clear</button>
+            <button class="rainbow">🌈Rainbow Mode</button>
+            <button class="fill">🪣Bucket</button>
+        </div>
+        <div class="right-panel">
+            <div class="container">
+                <!-- Grid cells will be generated here -->
+            </div>
+            <input class="input" type="range" min="4" max="80" value="16">
+            <p></p>
+        </div>
+    </div>
+
+    <script src="js.js"></script>
+</body>
+
+</html>
